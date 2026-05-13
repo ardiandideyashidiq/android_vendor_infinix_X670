@@ -410,6 +410,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X670/proprietary/vendor/lib/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko
 
 PRODUCT_PACKAGES += \
+    libem_aoltest_jni \
+    libem_audio_jni \
+    libem_support_jni \
+    libem_wifi_jni \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
@@ -1141,6 +1145,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.clientapi@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.engineermode@1.0 \
+    vendor.mediatek.hardware.engineermode@1.1 \
+    vendor.mediatek.hardware.engineermode@1.2 \
+    vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -1178,12 +1186,14 @@ PRODUCT_PACKAGES += \
     libArcFilter \
     libNvStreamingSdkCore \
     libarcsoft_frc \
+    libaudiotoolkit \
     libc++_shared \
     libcvface_api \
     libeffect \
     libiconv \
     libjniarcsoft_frc \
     libzbar \
+    EngineerMode \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
     gnss-mediatek.xml \
