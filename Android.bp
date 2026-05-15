@@ -25613,6 +25613,13 @@ install_symlink {
 }
 
 install_symlink {
+    name: "vendor_lib64_hw_kmsetkey_default_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/kmsetkey.default.so",
+    symlink_target: "/vendor/lib64/hw/kmsetkey.trustonic.so",
+}
+
+install_symlink {
     name: "vendor_lib64_hw_gatekeeper_trustonic_so",
     soc_specific: true,
     installed_location: "lib64/hw/gatekeeper.trustonic.so",

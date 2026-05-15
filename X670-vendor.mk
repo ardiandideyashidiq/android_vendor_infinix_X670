@@ -1259,6 +1259,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor_lib_libmtk_drvb_so \
     vendor_lib64_hw_vulkan_mt6781_so \
+    vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
     vendor_lib64_hw_gatekeeper_default_so \
     vendor_lib64_libdpframework_so \
