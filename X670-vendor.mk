@@ -270,7 +270,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc \
-    vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
@@ -285,6 +284,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X670/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
+    vendor/infinix/X670/proprietary/vendor/etc/init/init.pnpmgr.fpsgo.boost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pnpmgr.fpsgo.boost.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
@@ -1201,7 +1201,6 @@ PRODUCT_PACKAGES += \
     gnss-mediatek.xml \
     gnss@2.1-service.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
-    manifest_media_c2_V1_1_mediatek.xml \
     vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     kpoc_charger \
     bip \
@@ -1216,7 +1215,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.1-service.trustonic \
-    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.usb@1.2-service-mediatekv2 \

@@ -14843,7 +14843,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -14889,7 +14889,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -14938,7 +14938,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -15144,7 +15144,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcodec2_soft_common",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libcodec2",
                 "libcodec2_vndk",
                 "liblog",
@@ -15177,7 +15177,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcodec2_soft_common",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libcodec2",
                 "libcodec2_vndk",
                 "liblog",
@@ -24041,15 +24041,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_media_c2_V1_1_mediatek.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
     owner: "infinix",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
@@ -24442,49 +24433,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libMcClient",
                 "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.media.c2@1.2-mediatek-64b",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
-            ],
-            shared_libs: [
-                "libstagefright_foundation-v33",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libcodec2_vndk",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libbinder",
-                "libcodec2_mtk_c2store",
-                "libcodec2_mtk_vdec",
-                "libcodec2_mtk_venc",
                 "libc++",
                 "libc",
                 "libm",
