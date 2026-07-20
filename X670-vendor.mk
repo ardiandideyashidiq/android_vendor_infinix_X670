@@ -427,6 +427,7 @@ PRODUCT_PACKAGES += \
     libMcClient \
     libMtkSpeechEnh \
     libTEECommon \
+    lib_speech_enh \
     libadpcmdec_mtk \
     libaedv \
     libaudio_param_parser-vnd \
@@ -444,6 +445,7 @@ PRODUCT_PACKAGES += \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbwc \
+    libccci_util \
     libcrypto-md \
     libcurl-md \
     libcustom_nvram \
@@ -466,6 +468,8 @@ PRODUCT_PACKAGES += \
     libmtkshifter_vendor \
     libnvram \
     libnvram_sec \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
     libssl-md \
     libthha \
     libvcodec_oal \
@@ -797,7 +801,6 @@ PRODUCT_PACKAGES += \
     libWaterMarkProc \
     lib_bsscore \
     lib_iir \
-    lib_speech_enh \
     lib_sr_indep_ocl \
     libaaa_ltm \
     libaaa_ltmx \
@@ -902,7 +905,6 @@ PRODUCT_PACKAGES += \
     libcapctrl \
     libcares_naptr \
     libcarrierconfig \
-    libccci_util \
     libcharon-ss \
     libchromanr \
     libcmdl \
@@ -1073,8 +1075,6 @@ PRODUCT_PACKAGES += \
     libsensor_custom \
     libsimaka \
     libsmartdetector \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
     libst_mobile \
     libst_sr_models \
     libstblur_capture_api \
