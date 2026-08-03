@@ -472,6 +472,60 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "sound_trigger.primary.default",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/sound_trigger.primary.default.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "libmedia_helper",
+                "libhidlbase",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/sound_trigger.primary.default.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "libmedia_helper",
+                "libhidlbase",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.keymaster_attestation@1.1-impl",
     owner: "infinix",
     strip: {
@@ -682,6 +736,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lib_iir",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/lib_iir.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_iir.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib_speech_enh",
     owner: "infinix",
     strip: {
@@ -808,6 +901,49 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc++",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalsautils-v32",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libalsautils-v32.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libaudioutils",
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libalsautils-v32.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libaudioutils",
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -1439,6 +1575,57 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc++",
                 "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_audio_session_mediatek",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
                 "libdl",
             ],
         },
@@ -2085,6 +2272,49 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libc++",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmsbc_mtk",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmsbc_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmsbc_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
                 "libdl",
             ],
         },
@@ -11496,32 +11726,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib_iir",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_iir.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib_sr_indep_ocl",
     owner: "infinix",
     strip: {
@@ -11821,34 +12025,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libalsautils-v32",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libalsautils-v32.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -16878,34 +17054,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmsbc_mtk",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmsbc_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
             ],
         },
     },
@@ -25004,6 +25152,33 @@ cc_prebuilt_binary {
                 "liblog",
                 "libforkexecwrap",
                 "libifcutils_mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "kmsetkey_ca.trustonic",
+    owner: "infinix",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/kmsetkey_ca.trustonic",
+            ],
+            shared_libs: [
+                "libMcClient",
+                "libcutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",

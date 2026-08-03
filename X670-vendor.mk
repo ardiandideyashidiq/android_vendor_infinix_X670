@@ -307,6 +307,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X670/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
+    vendor/infinix/X670/proprietary/vendor/etc/init/trustonic.mc_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.mc_kmsetkey_ca.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/vendor.fpsensor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.fpsensor.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
@@ -422,14 +423,17 @@ PRODUCT_PACKAGES += \
     audio.primary.mt6781 \
     audio.r_submix.mt6781 \
     kmsetkey.trustonic \
+    sound_trigger.primary.default \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     libAVCSecureVencCA \
     libMcClient \
     libMtkSpeechEnh \
     libTEECommon \
+    lib_iir \
     lib_speech_enh \
     libadpcmdec_mtk \
     libaedv \
+    libalsautils-v32 \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -444,6 +448,7 @@ PRODUCT_PACKAGES += \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
+    libbluetooth_audio_session_mediatek \
     libbwc \
     libccci_util \
     libcrypto-md \
@@ -460,6 +465,7 @@ PRODUCT_PACKAGES += \
     libipsec_ims_shr \
     libladder \
     libmp3dec_mtk \
+    libmsbc_mtk \
     libmtcloader \
     libmtkcutils \
     libmtklimiter_vendor \
@@ -800,7 +806,6 @@ PRODUCT_PACKAGES += \
     libTran_mtkPowerAPI \
     libWaterMarkProc \
     lib_bsscore \
-    lib_iir \
     lib_sr_indep_ocl \
     libaaa_ltm \
     libaaa_ltmx \
@@ -813,7 +818,6 @@ PRODUCT_PACKAGES += \
     libaiawb_p1ggm \
     libaiawb_sun \
     libaiawb_sun_model \
-    libalsautils-v32 \
     libamipengine \
     libanc_dc_base \
     libanc_hdr \
@@ -972,7 +976,6 @@ PRODUCT_PACKAGES += \
     libmnetlink_v104 \
     libmnl \
     libmpbase \
-    libmsbc_mtk \
     libmsnr \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -1230,6 +1233,7 @@ PRODUCT_PACKAGES += \
     vtservice_hidl \
     init.insmod \
     ipsec_mon \
+    kmsetkey_ca.trustonic \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
