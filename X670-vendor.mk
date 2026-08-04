@@ -266,6 +266,11 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X670/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/infinix/X670/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/infinix/X670/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
+    vendor/infinix/X670/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/infinix/X670/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/infinix/X670/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
+    vendor/infinix/X670/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/infinix/X670/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X670/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -322,6 +327,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X670/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
     vendor/infinix/X670/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
     vendor/infinix/X670/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
+    vendor/infinix/X670/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/infinix/X670/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/infinix/X670/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/infinix/X670/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
@@ -508,6 +514,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareUtilsServer \
     arm.graphics-V1-ndk_platform \
+    arm.graphics-V3-ndk \
     libGLES_mali \
     libGLES_meow \
     libMEOW_data \
@@ -833,6 +840,8 @@ PRODUCT_PACKAGES += \
     libarcsoft_low_light_hdr \
     libarcsoft_low_light_shot \
     libarcsoft_night_hawk \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
     libasn1c_core \
@@ -966,6 +975,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libkmsetkey \
     libksensor \
+    liblibarm_mali_config_sysprops \
     liblpcnr \
     libm4u \
     libmagicsky_64 \
