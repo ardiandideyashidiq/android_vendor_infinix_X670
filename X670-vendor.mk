@@ -425,6 +425,8 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
+    android.hardware.audio@6.0-impl-mediatek \
+    android.hardware.audio@7.0-impl-mediatek \
     audio.primary.mt6781 \
     audio.r_submix.mt6781 \
     kmsetkey.trustonic \
@@ -491,10 +493,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@6.0-impl-mediatek \
-    android.hardware.audio@7.0-impl-mediatek \
     awinic.audio.effect \
     libHEVCdec_sa.ca7.android \
     libfgauge_gm30 \
